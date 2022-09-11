@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Câu lệnh switch-case</h2>
+
+<p>Click the button to check the month.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+
+<script>
+  function myFunction() {
+    let month = parseInt(prompt("enter month?"));
+    switch(month) {
+      case 4:
+      case 6:
+      case 9:
+      case 11:
+        alert("thang " + month + " co 30 ngay")
+        break;
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
+       alert("thang " + month + " co 31 ngay")
+        break;
+      case 2:
+        alert("thang " + month + " co 28 ngay hoac 29 ngay")
+        break;
+      default:
+        alert("đây không phải là 1 tháng trong năm")
+    }
+    }
+</script>
+</body>
+</html>
