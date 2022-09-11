@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+
+
+    button{
+      width: 50px;
+      height: 25px;
+    }
+    button:nth-child(2){
+      z-index: 2222;
+    }
+
+  </style>
+</head>
+<body>
+    <div style="margin-top: auto;margin-left: auto">
+        <h1  >Do You love me ?</h1>
+        <button type="button" id="yes" onclick="yes()">Yes</button>
+        <button type="button" id="No" onmouseover="no()" style="position: absolute ;left: 60px"  >No</button>
+
+    </div>
+
+
+
+<script>
+  function yes(){
+    alert("You are the last rose in my barren land.")
+  }
+  function no(){
+    let x = Math.floor(Math.random()*window.innerWidth);
+    let y = Math.floor(Math.random()*window.innerHeight);
+    document.getElementById('No').style.left = x + 'px';
+    document.getElementById('No').style.top = y + 'px';
+  }
+</script>
+</body>
+</html>
